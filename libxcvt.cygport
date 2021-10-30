@@ -1,0 +1,23 @@
+inherit meson xorg
+
+NAME="libxcvt"
+VERSION=0.1.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="VESA CVT standard timing modelines generator library"
+DESCRIPTION="libxcvt is a library providing a standalone version of the X server
+implementation of the VESA CVT standard timing modelines generator."
+
+SRC_URI="https://xorg.freedesktop.org/archive/individual/lib/${PN}-${PV}.tar.xz"
+
+PKG_NAMES="cvt libxcvt libxcvt-devel"
+
+cvt_SUMMARY="Command line tool to calculate VESA CVT mode lines"
+cvt_CONTENTS="usr/bin/cvt.exe usr/share/man"
+cvt_CATEGORY="X11"
+
+libxcvt_SUMMARY="${SUMMARY} (runtime)"
+libxcvt_CONTENTS="usr/bin/cygxcvt.dll usr/share/doc/libxcvt/COPYING"
+
+libxcvt_devel_SUMMARY="${SUMMARY} (devel)"
+libxcvt_devel_CONTENTS="usr/include usr/lib usr/share/doc/libxcvt/README.md"
