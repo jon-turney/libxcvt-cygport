@@ -1,7 +1,7 @@
 inherit meson xorg
 
 NAME="libxcvt"
-VERSION=0.1.0
+VERSION=0.1.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="VESA CVT standard timing modelines generator library"
@@ -17,7 +17,7 @@ cvt_CONTENTS="usr/bin/cvt.exe usr/share/man"
 cvt_CATEGORY="X11"
 
 libxcvt_SUMMARY="${SUMMARY} (runtime)"
-libxcvt_CONTENTS="usr/bin/cygxcvt.dll usr/share/doc/libxcvt/COPYING"
+libxcvt_CONTENTS="usr/bin/cygxcvt-0.dll usr/share/doc/libxcvt/COPYING"
 
 libxcvt_devel_SUMMARY="${SUMMARY} (devel)"
 libxcvt_devel_CONTENTS="usr/include usr/lib usr/share/doc/libxcvt/README.md"
